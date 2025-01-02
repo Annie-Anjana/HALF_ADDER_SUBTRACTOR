@@ -34,6 +34,14 @@ Borrow = A’B
 Figure -02 HALF Subtractor
 
 **Truthtable**
+FULL ADDER 
+![image](https://github.com/user-attachments/assets/bab07b4f-fa9b-4f21-a77b-12ca88cfdee9)
+
+FULL SUBTRACTOR
+![image](https://github.com/user-attachments/assets/b9e958d5-cfb4-4971-9dba-19603af10d90)
+
+
+
 
 **Procedure**
 
@@ -52,10 +60,44 @@ Figure -02 HALF Subtractor
 
 /* Program to design a half adder and full adder circuit and verify its truth table in quartus using Verilog programming.
 
-Developed by: RegisterNumber:*/
+```
+HALFSUBTRACTOR 
+module HALFSUBTRACTORANDADDER(a,b,dif,bor);
+ input a,b;
+ output dif,bor;
+ assign dif=a^b;
+ assign x=~a;
+ assign bor=b&x;
+ endmodule 
+HALFADDER
+ module adder(a,b,v,j);
+ input a,b;
+ output v,j;
+ assign v=a^b;
+ assign j=a&b;
+ endmodule
+```
+
+Developed by: ANNIE ANJANA A RegisterNumber:24010978
 
 **RTL Schematic**
+FULL ADDER
+![image](https://github.com/user-attachments/assets/04927a85-028c-424e-b3e9-3d59ee6a9924)
+
+FULL SUBTRACTOR
+![image](https://github.com/user-attachments/assets/d1d73635-9057-4674-9725-51bce5e62acf)
+
 
 **Output/TIMING Waveform**
+FULL ADDER
+![image](https://github.com/user-attachments/assets/25001916-7770-4b0d-8f44-f27c257babd2)
+
+FULL SUBTRACTOR
+
+![image](https://github.com/user-attachments/assets/0fa06dbc-b7de-4d6d-a498-452768b907c8)
+
+
 
 **Result:**
+Thus the Full Adder and Full Subtractor circuits are designed and the truth tables is
+ verified using Quartus software
